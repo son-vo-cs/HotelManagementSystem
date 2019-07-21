@@ -31,7 +31,6 @@ CREATE TABLE Booking
     roomNumber INT,
     checkInDate DATE,
     checkOutDate DATE,
-    PRIMARY KEY (),
     FOREIGN KEY (uID) REFERENCES USER(uID) ON DELETE CASCADE,
     FOREIGN KEY (roomNumber) REFERENCES Room(roomNumber) ON DELETE CASCADE
 );
